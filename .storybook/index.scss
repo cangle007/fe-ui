@@ -1,0 +1,7 @@
+@use 'fe-variables';
+@use 'fe-variables/variables/palette';
+
+body {
+  padding: 20px;
+  background-color: palette.$neutral-1;
+}
