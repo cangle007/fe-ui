@@ -1,3 +1,4 @@
+@use "sass:color";
 @use 'fe-variables/variables/palette';
 
 .button-container {
@@ -33,15 +34,15 @@
 
     &:not([disabled]) {
       &:hover {
-        background-color: adjust-color(palette.$primary, $lightness: -10);
-        border-color: adjust-color(palette.$primary, $lightness: -10);
+        background-color: color.adjust(palette.$primary, $lightness: -10);
+        border-color: color.adjust(palette.$primary, $lightness: -10);
       }
     }
 
     &:not([disabled]) {
       &:active {
-        background-color: adjust-color(palette.$primary, $lightness: 5);
-        border-color: adjust-color(palette.$primary, $lightness: 5);
+        background-color: color.adjust(palette.$primary, $lightness: 5);
+        border-color: color.adjust(palette.$primary, $lightness: 5);
       }
     }
   }
@@ -53,13 +54,13 @@
 
     &:not([disabled]) {
       &:hover {
-        background-color: adjust-color(palette.$primary, $lightness: 42);
+        background-color: color.adjust(palette.$primary, $lightness: 42);
       }
     }
 
     &:not([disabled]) {
       &:active {
-        background-color: adjust-color(palette.$primary, $lightness: 48);
+        background-color: color.adjust(palette.$primary, $lightness: 48);
       }
     }
 
@@ -74,15 +75,15 @@
 
     &:not([disabled]) {
       &:hover {
-        background-color: adjust-color(palette.$success, $lightness: -10);
-        border-color: adjust-color(palette.$success, $lightness: -10);
+        background-color: color.adjust(palette.$success, $lightness: -10);
+        border-color: color.adjust(palette.$success, $lightness: -10);
       }
     }
 
     &:not([disabled]) {
       &:active {
-        background-color: adjust-color(palette.$success, $lightness: 5);
-        border-color: adjust-color(palette.$success, $lightness: 5);
+        background-color: color.adjust(palette.$success, $lightness: 5);
+        border-color: color.adjust(palette.$success, $lightness: 5);
       }
     }
   }
@@ -92,15 +93,15 @@
 
     &:not([disabled]) {
       &:hover {
-        background-color: adjust-color(palette.$error, $lightness: -10);
-        border-color: adjust-color(palette.$error, $lightness: -10);
+        background-color: color.adjust(palette.$error, $lightness: -10);
+        border-color: color.adjust(palette.$error, $lightness: -10);
       }
     }
 
     &:not([disabled]) {
       &:active {
-        background-color: adjust-color(palette.$error, $lightness: 5);
-        border-color: adjust-color(palette.$error, $lightness: 5);
+        background-color: color.adjust(palette.$error, $lightness: 5);
+        border-color: color.adjust(palette.$error, $lightness: 5);
       }
     }
   }
