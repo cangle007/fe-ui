@@ -13,11 +13,8 @@ export default function ButtonComponent(props) {
   );
 
   return (
-    <div className={css['button-container']}>
-      <button className={classes} disabled={disabled}>
-        {children}
-      </button>
-      <h1>i am h1</h1>
-    </div>
+    <button className={classes} disabled={disabled}>
+      {children}
+    </button>
   );
 }
